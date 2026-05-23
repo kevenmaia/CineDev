@@ -47,6 +47,29 @@
         text-indent: 30px;
        }
 
+    @media (max-width: 650px) {
+    
+    /* O card deixa de ter tamanho fixo e passa a ocupar 90% da tela do celular */
+    article {
+        width: 90%; 
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Garante que nenhuma imagem fique maior que o card e quebre a tela */
+    article img {
+        width: 100%;
+        height: auto; /* Deixa a altura proporcional para não achatar */
+    }
+
+    /* Ajusta os links do menu para não ficarem espremidos ou colados */
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 14px; /* Diminui um pouquinho a letra se precisar */
+    }
+}
+
        .btn-trailer{
         background-color: crimson;
         color: white;
