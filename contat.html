@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinema</title>
+    <style>
+       body{
+        background: #111;
+        color: #fff;
+        margin: 0;
+       }
+
+       header{
+        background: #222 ;
+        text-align: center;
+        padding: 5px;
+       }
+
+       nav a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+       }
+
+       nav a:hover{
+        font-weight: bold;
+        color: red;
+       }
+
+       article{
+        text-align: center;
+        width: 400px;
+        background-color: #222;
+        border-radius: 15px;
+        margin: 40px auto;
+        padding: 10px 20px;
+       }
+
+       /*article img{
+        width: 200px;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin: 20px auto;
+       }*/
+
+       article p{
+        text-align: justify;
+        text-indent: 30px;
+       }
+
+    .cont-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+
+    .cont-form input,
+    .cont-form textarea{
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background-color: #333;
+        color: white;
+        font-size: 15px;
+    }
+
+    .cont-form textarea{
+        resize: none;
+    }
+
+    .cont-form button{
+        background-color: crimson;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .cont-form button:hover{
+        background-color: darkred;
+        transform: translateY(-3px);
+}
+
+       /*.btn-trailer{
+        background-color: rgb(194, 13, 13);
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+        transition: all 0.2s ease-in-out;
+       }
+
+       .btn-trailer:hover{
+        background-color: rgb(21, 172, 21);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(8, 8, 8, 0.3);
+       }*/
+
+       footer{
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>CineDev | Os Melhores Filmes</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="hcine.html">História do Cinema</a>
+        <a href="contat.html">Contato</a>
+    </nav>
+</header>
+
+
+
+<main>
+    <article>
+
+        <!--<img src="https://i.pravatar.cc/300" alt="Pôster do filme Interestelar">-->
+
+        <h2>Contato</h2>
+        <p>
+            Tem alguma dúvida, sugestão ou deseja recomendar um filme?
+        Entre em contato conosco através do formulário abaixo.
+        </p>
+
+        <form class="cont-form">
+            <input type="text" placeholder="Seu nome" required>
+
+            <input type="email" placeholder="Seu e-mail" required>
+
+            <textarea placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </article>
+</main>
+
+<footer>
+    <p>© 2026 - Desenvolvido por Keven Maia</p>
+</footer>
+</body>
+</html>
