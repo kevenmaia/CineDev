@@ -20,7 +20,9 @@
        nav a{
         color: white;
         text-decoration: none;
-        margin: 15px;
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 14px;;
        }
 
        nav a:hover{
@@ -30,18 +32,15 @@
 
        article{
         text-align: center;
-        width: 450px;
+        max-width: 450px; /* Mudamos de 'width' para 'max-width' (largura máxima) */
+        width: 100%;       /* Permite que ele encolha se a tela for menor que 450px */
         background-color: #222;
         border-radius: 15px;
         margin: 40px auto;
         padding: 10px 20px;
        }
 
-       article img{
-        width: 400px;
-
-       }
-
+     
        article ol{
         padding-left: 35px;
         text-align: left;
@@ -58,6 +57,28 @@
         color: red;
        }
 
+    @media (max-width: 650px) {
+    
+    /* O card deixa de ter tamanho fixo e passa a ocupar 90% da tela do celular */
+    article {
+        width: 90%; 
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Garante que nenhuma imagem fique maior que o card e quebre a tela */
+    article img {
+        width: 100%;
+        height: auto; /* Deixa a altura proporcional para não achatar */
+    }
+
+    /* Ajusta os links do menu para não ficarem espremidos ou colados */
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 14px; /* Diminui um pouquinho a letra se precisar */
+    }
+}   
        /*.btn-trailer{
         background-color: rgb(194, 13, 13);
         color: white;
